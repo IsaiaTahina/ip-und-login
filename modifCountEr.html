@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+    <style>
+        body{
+         
+            margin: 0;
+            padding: 0;
+        }
+         .divdiv{
+            margin-top: 80px;
+          display: flex;
+         
+          justify-content: center;
+          align-items: center;
+        } 
+        p{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: xx-large;
+            color:#fff;
+            font-weight: 900;
+            display: inline;
+            
+        }
+
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden; 
+}
+
+.bgPulse{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.boite{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: rgb(4, 9, 12);
+    animation: animate 5s linear infinite ;
+}
+
+.class1{
+   top:20%;
+    left: 10%;
+    animation-delay: -1s;
+    
+} 
+
+.class2{
+   top:20%;
+    left: 25%;
+      animation-delay: -2s;
+}
+.class3{
+   top:20%;
+    left: 40%;
+    animation-delay: -3s;
+} 
+
+.class4{
+   top:20%;
+    left: 55%;
+    animation-delay: -4s;
+}
+
+.class5{
+   top:20%;
+    left: 70%;
+    animation-delay: -5s;
+}
+.class6{
+   top:20%;
+    left: 85%;
+    animation-delay: -6s;
+} 
+
+
+
+@keyframes animate {
+    0%{
+        opacity: 1;
+        text-shadow: none;
+    }
+    10%{
+     opacity: 0.5;
+    }
+    20%{
+        opacity: 1;
+        text-shadow:0 0 7px rgb(14, 14, 13),0 0 20px rgb(254, 254, 254);
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+     opacity: 0.5;
+     text-shadow: none;
+    }
+    50%{
+        opacity: 1;
+         text-shadow:0 0 7px rgb(14, 14, 13),0 0 20px rgb(254, 254, 254);
+    }
+    60%{
+        opacity: 0.5;
+        text-shadow: none;
+    }
+    70%{
+        opacity: 1;
+         text-shadow:0 0 7px rgb(14, 14, 13),0 0 20px rgb(254, 254, 254);
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+     opacity: 0.5;
+     text-shadow: none;
+    }
+    100%{
+        opacity: 1;
+         text-shadow:0 0 7px rgb(14, 14, 13),0 0 20px rgb(254, 254, 254);
+    }
+}
+
+/*---------------------------------------------------*/
+.form{
+    width: 70%;
+    height: 500px;
+    
+    position: relative;
+    top:250px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    background-color: rgba(27, 25, 57, 0.626);
+}
+
+input{
+    width: 75%;
+    height: 45px;
+    position: relative;
+    top:50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: medium;
+    font-style: italic;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid rgb(247, 244, 248);
+    background-color: #2b28352d;/*#3808e42d*/
+    margin: 10px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.retour{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid rgb(247, 244, 248);
+    background-color: #380888;
+    margin: 10px 15px;
+    text-align: center;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+}
+
+
+.ip:hover{
+    background-color: #615b61;
+}
+.retour:hover{
+    background-color: #0a090a;
+}
+
+.sub{
+    top:90px;
+     left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.verifier{
+    color: red;
+    width:75%;
+    height: 45px;
+    position: relative;
+    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: medium;
+    font-style: italic;
+    font-weight: 800;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid rgb(22, 227, 220);
+    background-color: #fff;/*#3808e42d*/
+    margin: 10px 15px;
+    text-align: center;
+    text-wrap: wrap;
+    align-self: center;
+    align-content: center;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+   <section>
+    <div class="bgPulse">
+        <div class="boite class1"><p>m</p></div>
+        <div class="boite class2"><p>o</p></div>
+        <div class="boite class3"><p>d</p></div>
+        <div class="boite class4"><p>i</p></div>
+        <div class="boite class5"><p>f</p></div>
+        <div class="boite class6"><p>y</p></div>
+    </div>
+</section>
+
+<div class="form">
+    <form action="modifierCount.cgi" method="get">
+    <p><input type="text" name="name" id="LOG" required placeholder="NOM" class="ip"></p>
+    <p><input type="prenom" name="pre" id="PRE" required placeholder="Prenom" class="ip"><p>
+
+    <input type="pwd" name="pwd" id="pwd" required placeholder="Password" size="12" class="ip">
+    <p><input type="submit" value="modifier" class="retour sub"></p>
+
+    </form>
+    <pre class="verifier">Password or username incorrect</pre>
+</div>
+</body>
+</html>

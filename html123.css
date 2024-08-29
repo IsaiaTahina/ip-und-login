@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+}
+
+.form{
+    width: 500px;
+    height: 500px;
+    margin-top:5%;
+    position: relative;
+    left: 50%;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    background-color: rgba(27, 25, 57, 0.626);
+}
+
+input{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: medium;
+    font-style: italic;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid rgb(247, 244, 248);
+    background-color: #3808e42d;
+    margin: 10px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+select{
+        width: 50%;
+        height: 45px;
+        position: relative;
+        top:100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: medium;
+        font-style: italic;
+        font-weight: 800;
+        border-radius: 20px;
+        border: 3px solid rgb(247, 244, 248);
+        background-color: #41128d6f;
+        margin: 10px 15px;
+        text-align: center;
+        color: rgb(254, 254, 255);
+}
+
+
+.retour{
+    width: 25%;
+    height: 45px;
+    position: relative;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid rgb(247, 244, 248);
+    background-color: #380888;
+    margin: 10px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.sub{
+    top:150px;
+     left: 25%;
+    transform: translateX(-25%);
+}
+.res{
+top:70px;
+     left: 75%;
+    transform: translateX(-75%);
+}
+
+
+

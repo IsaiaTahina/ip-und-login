@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1</title>
+    <style>
+        html,body{
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            width: 100vw;
+            background-color: #000;
+        }
+        .container{
+            width: 75%;
+            height: 75%;
+            background-color: #111;
+            position: relative;
+        }
+        .btn{
+            width:75%;
+            height: 50px;
+            margin: 50px 10px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            align-content: center;
+            letter-spacing: 3px;
+            font-weight: 700;
+            font-size: 22px;
+            border-radius: 10px;
+            text-transform: capitalize;
+           
+           font-family: sans-serif;
+            background-color: #262626;
+            cursor:pointer;
+            transition: .3s;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .btn:hover{
+            background-color: #224;
+        }
+
+
+        /* ------------------------------------ */
+
+        h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:50px;
+    color: rgba(255,255,255,.1);
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    background-image: url(anim2.png);
+    background-repeat: repeat-x;
+    -webkit-background-clip:text;
+    animation: animate 15s linear infinite;
+    @media (max-width: 600px) {
+        font-size :40px;
+    }
+}
+
+@keyframes animate
+{
+    0%{
+      background-position: left 0px top 100px;  
+    }
+    40%{
+        background-position: left 1000px top -200px;  
+      }
+    80%{
+        background-position: left 2000px top -400px;  
+      }
+    100%{
+        background-position: left 2500px top 100px;  
+      }
+}
+
+
+    </style>
+</head>
+<!-- 28-07-24 -->
+<body>
+
+    <div class="container">
+        <h1>Willkommen</h1>
+        <div class="btn"><a href="first.html">connect</a></div>
+        <div class="btn"><a href="html123.html">enroll</a></div>
+    </div>
+</body>
+</html>
